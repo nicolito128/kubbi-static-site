@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    background-color: #101010;
+    color: #f1f1f1;
+}
+
+.cabecera {
+    background-color: rgb(100, 19, 73);
+    box-shadow: 0px 1px 20px -3px #000;
+}
+
+.cabecera .titulo {
+    float: left;
+    color: #f1f1f1;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cabecera .menu ul {
+    list-style: none;
+}
+
+.cabecera .menu li {
+    display: inline-block;
+    margin: auto;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cabecera .menu a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.cabecera .menu li:hover {
+    background-color: rgb(139, 29, 103);
+}
+
+.sobre-mi .logo {
+    width: 250px;
+    height: 280px;
+}
+
+.sobre-mi .info {
+    display: inline-block;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    background-color: #262626;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 16px -3px #000;
+}
+
+.sobre-mi {
+    min-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    width: 40%;
+    float: left;
+}
+
+.info img {
+    float: right;
+    margin-right: 60px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.info p, .info h2 {
+    text-align: left;
+    padding: 10px;
+}
+
+.info .titulo {
+    font-size: 2em;
+}
+
+.info .pais {
+    font-style: italic;
+}
+
+.extras {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.recomendaciones {
+    display: inline-block;
+    padding: 5px;
+    margin: auto;
+    min-height: 300px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.recomendaciones h2 {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.recomendaciones img {
+    margin-bottom: 10px;
+}
+
+.recomendaciones li {
+    max-width: 180px;
+    display: inline-block;
+    list-style: none;
+    padding: 20px 15px;
+}
+
+.recomendaciones .song-info p {
+    font-size: 0.75em;
+    padding-bottom: 10px;
+}
+
+.recomendaciones img {
+    width: 120px;
+    height: 120px;
+}
+
+footer {
+    background-color: #111111;
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+footer p {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(192, 49, 144);
+}
