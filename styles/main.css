@@ -151,3 +151,16 @@ a {
     text-decoration: none;
     color: rgb(192, 49, 144);
 }
+
+@media (max-width: 768px) {
+    .info {
+        width: 100%;
+        float: none;
+    }
+
+    .info img {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+}
