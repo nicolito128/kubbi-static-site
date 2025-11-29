@@ -1,0 +1,12 @@
+services:
+  # Web server service
+  apache:
+    build:
+      context: .
+      dockerfile: Containerfile
+    ports:
+      - "8080:80"
+    container_name: kubbi_apache
+    restart: unless-stopped
+    volumes:
+      - ./:/usr/local/apache2/htdocs/
