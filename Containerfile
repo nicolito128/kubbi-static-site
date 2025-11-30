@@ -1,3 +1,8 @@
-FROM httpd:2.4-alpine
+FROM php:8.5-apache
 
-COPY . /usr/local/apache2/htdocs/
+COPY . /var/www/html/
+
+EXPOSE 80
+
+# Configura Apache
+RUN a2enmod rewrite
