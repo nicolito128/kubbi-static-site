@@ -1,2 +1,6 @@
 Containerfile
+
 container-compose.yaml
+
+**/.git
+.gitignore

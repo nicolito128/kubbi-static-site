@@ -1,0 +1,14 @@
+# DB
+data/
+
+# Environment
+!.env*.example
+.env*
+
+# Specifics
+.idea/
+.vscode/
+node_modules/
+dist/
+vendor/
+.DS_Store

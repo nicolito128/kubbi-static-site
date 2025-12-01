@@ -1,3 +1,13 @@
-FROM httpd:2.4-alpine
+FROM php:8.5-apache
 
-COPY . /usr/local/apache2/htdocs/
+WORKDIR /var/www/html/
+
+COPY src/ /var/www/html/
+
+EXPOSE 80
+
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+
+RUN a2enmod rewrite
+
+CMD ["apache2-foreground"]
