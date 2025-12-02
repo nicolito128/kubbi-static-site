@@ -7,32 +7,8 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
-
   <body>
-    <header class="cabecera">
-      <a href="./">
-        <h1 class="titulo">Kubbi</h1>
-      </a>
-      <nav class="menu">
-        <ul>
-          <a href="./">
-            <li>Inicio</li>
-          </a>
-          <a href="pages/albums.html">
-            <li>Albums</li>
-          </a>
-          <a href="pages/tienda.html">
-            <li>Tienda</li>
-          </a>
-          <a href="pages/suscribete.html">
-            <li>Suscribete</li>
-          </a>
-          <a href="pages/contacto.html">
-            <li>Contacto</li>
-          </a>
-        </ul>
-      </nav>
-    </header>
+    <?php include 'partials/header.php'; ?>
 
     <main class="contenido-principal">
       <div class="sobre-mi">
@@ -146,8 +122,6 @@
       </section>
     </main>
 
-    <footer>
-      <p>&#169; Copyright 2025 - Nicolas Abel Serna - Programación Web</p>
-    </footer>
+    <?php include 'partials/footer.php'; ?>
   </body>
 </html>

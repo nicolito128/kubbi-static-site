@@ -9,33 +9,10 @@
     <link rel="stylesheet" href="../styles/forms.css">
   </head>
   <body>
-    <header class="cabecera">
-      <a href="../">
-        <h1 class="titulo">Kubbi</h1>
-      </a>
-      <nav class="menu">
-        <ul>
-          <a href="../">
-            <li>Inicio</li>
-          </a>
-          <a href="../pages/albums.html">
-            <li>Albums</li>
-          </a>
-          <a href="../pages/tienda.html">
-            <li>Tienda</li>
-          </a>
-          <a href="../pages/suscribete.html">
-            <li>Suscribete</li>
-          </a>
-          <a href="../pages/contacto.html">
-            <li>Contacto</li>
-          </a>
-        </ul>
-      </nav>
-    </header>
+    <?php include '../partials/header.php'; ?>
 
     <main class="contenido-principal">
-      <form>
+      <form id="contactForm">
         <fieldset>
           <legend>Contacto profesional</legend>
           <p>Puede contactarme con ofertas para colaboraciones o eventos en los que le gustaría que participe.</p>
@@ -80,7 +57,7 @@
               <label for="subject">Asunto:</label>
             </p>
             <p>
-              <select name="subject" id="subjectSelector">
+              <select name="subject" id="subject" required>
                 <option value="collaboration">Colaboración</option>
                 <option value="event">Evento</option>
                 <option value="other">Otro</option>
@@ -113,8 +90,8 @@
       </form>
     </main>
 
-    <footer>
-      <p>&#169; Copyright - Nicolas Abel Serna - Programación Web</p>
-    </footer>
+    <?php include '../partials/footer.php'; ?>
+
+    <script src="/scripts/contacto.js"></script>
   </body>
 </html>
