@@ -161,4 +161,10 @@ a {
         margin: 0 auto;
         display: block;
     }
+
+    .info .pais {
+        text-align: left;
+        max-width: 50px;
+        line-height: 35px;
+    }
 }
